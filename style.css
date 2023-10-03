@@ -40,6 +40,46 @@ h2 {
 	font-family: "Cabin";
 }
 
+#progress-tracker {
+	background-color: #f1f1f1;
+	padding: 10px 0;
+}
+#progress-tracker p {
+	margin: 5px;
+}
+
+#progress-tracker span {
+	color: #ff6b6c;
+	font-weight: bold;
+}
+
+#progress-tracker small {
+	font-family: "Cabin";
+	font-size: 12px;
+	color: #848484;
+}
+
+.background-container {
+	background-color: #d6d6d6;
+	border-radius: 2px;
+	margin: 0 25px;
+	position: relative;
+}
+
+.progress-bar {
+	height: 20px;
+	background-color: #ff6b6c;
+	border-radius: 2px;
+}
+
+.percentage-text {
+	font-size: 12px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .project {
 	width: 90vw;
 	max-width: 600px;
@@ -84,42 +124,28 @@ h2 {
 	color: #fffffb;
 }
 
-#progress-tracker {
-	background-color: #f1f1f1;
-	padding: 10px 0;
-}
-#progress-tracker p {
-	margin: 5px;
-}
+@media (max-width: 480px) {
+	.intro p {
+		font-size: 14px;
+	}
 
-#progress-tracker span {
-	color: #ff6b6c;
-	font-weight: bold;
-}
+	h2 {
+		font-size: 18px;
+	}
 
-#progress-tracker small {
-	font-family: "Cabin";
-	font-size: 12px;
-	color: #848484;
-}
+	.project iframe.portrait {
+		width: 150%;
+		transform: scale(0.7);
+		margin: -90px 0;
+	}
 
-.background-container {
-	background-color: #d6d6d6;
-	border-radius: 2px;
-	margin: 0 25px;
-	position: relative;
-}
+	.project iframe.paysage {
+		width: 150%;
+		transform: scale(0.7);
+		margin: -20px 0;
+	}
 
-.progress-bar {
-	height: 20px;
-	background-color: #ff6b6c;
-	border-radius: 2px;
-}
-
-.percentage-text {
-	font-size: 12px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	.project .btn {
+		font-size: 12px;
+	}
 }
