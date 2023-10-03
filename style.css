@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Anton:regular);
+@import url(https://fonts.googleapis.com/css?family=Cabin:regular,500,600,700,italic,500italic,600italic,700italic);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fffffb;
+	color: #001011;
+}
+
+h1 {
+	font-family: "Anton";
+}
+
+.intro {
+	max-width: 560px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.intro a {
+	color: #001011;
+}
+
+.intro a:hover {
+	text-decoration: none;
+	color: #ff6b6c;
+}
+
+h2 {
+	color: #fffffb;
+	font-family: "Cabin";
+}
+
+.project {
+	width: 90vw;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #007c77;
+	margin: 15px 0;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.project iframe {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.project iframe.portrait {
+	width: 100%;
+	height: 650px;
+}
+
+.project iframe.paysage {
+	width: 100%;
+	height: 200px;
+}
+
+.project .btn {
+	border: none;
+	border-radius: 4px;
+	padding: 8px 28px;
+	background-color: #fffffb;
+	cursor: pointer;
+	color: #231f20;
+}
+
+.project .btn:hover {
+	background-color: #ff6b6c;
+	color: #fffffb;
+}
+
+#progress-tracker {
+	background-color: #f1f1f1;
+	padding: 10px 0;
+}
+#progress-tracker p {
+	margin: 5px;
+}
+
+#progress-tracker span {
+	color: #ff6b6c;
+	font-weight: bold;
+}
+
+#progress-tracker small {
+	font-family: "Cabin";
+	font-size: 12px;
+	color: #848484;
+}
+
+.background-container {
+	background-color: #d6d6d6;
+	border-radius: 2px;
+	margin: 0 25px;
+	position: relative;
+}
+
+.progress-bar {
+	height: 20px;
+	background-color: #ff6b6c;
+	border-radius: 2px;
+}
+
+.percentage-text {
+	font-size: 12px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
