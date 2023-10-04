@@ -59,3 +59,7 @@ function createBackgroundContainer(percentage, progressBar) {
 }
 
 updateProgress();
+
+function reloadFrame() {
+	document.getElementById("myIfr").src = document.getElementById("myIfr").src;
+}

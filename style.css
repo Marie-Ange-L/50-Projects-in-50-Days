@@ -117,6 +117,7 @@ h2 {
 	background-color: #fffffb;
 	cursor: pointer;
 	color: #231f20;
+	margin: 0 5px;
 }
 
 .project .btn:hover {
