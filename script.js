@@ -1,3 +1,5 @@
+// Projects Count & Progress bar
+
 function updateProgress() {
 	const projectElements = document.querySelectorAll(".project");
 	const totalProjects = projectElements.length;
@@ -60,6 +62,29 @@ function createBackgroundContainer(percentage, progressBar) {
 
 updateProgress();
 
+// Reload iFrame
+
 function reloadFrame() {
 	document.getElementById("myIfr").src = document.getElementById("myIfr").src;
+}
+
+// Scroll Animation
+
+const projects = document.querySelectorAll(".project");
+
+window.addEventListener("scroll", checkProjects);
+
+checkProjects();
+
+function checkProjects() {
+	const triggerBottom = (window.innerHeight / 5) * 3.5;
+	projects.forEach((project) => {
+		const projectTop = project.getBoundingClientRect().top;
+
+		if (projectTop < triggerBottom) {
+			project.classList.add("show");
+		} else {
+			project.classList.remove("show");
+		}
+	});
 }
