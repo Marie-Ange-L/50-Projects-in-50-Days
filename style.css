@@ -145,6 +145,21 @@ h2 {
 		font-size: 18px;
 	}
 
+	.project {
+		transform: translateX(0) !important;
+		opacity: 0%;
+		transition: opacity 0.4s ease;
+	}
+
+	.project:nth-of-type(even) {
+		transform: translateX(0) !important;
+	}
+
+	.project.show {
+		transform: translateX(0) !important;
+		opacity: 100%;
+	}
+
 	.project iframe.portrait {
 		width: 150%;
 		transform: scale(0.7);
