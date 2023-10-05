@@ -13,7 +13,7 @@ function updateProgress() {
 
 	const progressTracker = document.getElementById("progress-tracker");
 
-	const percentage = (totalProjects / 50) * 100;
+	const percentage = Math.round((totalProjects / 50) * 100);
 
 	const progressText = createProgressText(formattedDate, totalProjects);
 
