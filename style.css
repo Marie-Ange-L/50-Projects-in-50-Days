@@ -126,6 +126,14 @@ h2 {
 	height: 540px;
 }
 
+.project small {
+	color: #fffffb;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
 .project .btn {
 	border: none;
 	border-radius: 4px;
@@ -139,6 +147,13 @@ h2 {
 .project .btn:hover {
 	background-color: #ff6b6c;
 	color: #fffffb;
+}
+
+.project .btn i {
+	position: absolute;
+	padding-left: 5px;
+	margin-right: 5px;
+	font-size: 8px;
 }
 
 @media (max-width: 480px) {
@@ -165,6 +180,10 @@ h2 {
 		opacity: 100%;
 	}
 
+	.project small {
+		font-size: 11px;
+	}
+
 	.project iframe.portrait {
 		width: 150%;
 		transform: scale(0.7);
@@ -180,7 +199,7 @@ h2 {
 	.project iframe.square {
 		width: 150%;
 		transform: scale(0.7);
-		margin: -50px 0;
+		margin: -70px 0;
 	}
 
 	.project .btn {
