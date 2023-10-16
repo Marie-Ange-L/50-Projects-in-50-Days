@@ -156,6 +156,22 @@ h2 {
 	font-size: 8px;
 }
 
+a.top {
+	background-color: #ff6b6c;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 5px;
+	bottom: 40px;
+	right: 40px;
+	position: fixed;
+	z-index: 1000;
+}
+
+.hidden {
+	display: none;
+}
+
 @media (max-width: 480px) {
 	.intro p {
 		font-size: 14px;
