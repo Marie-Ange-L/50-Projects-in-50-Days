@@ -88,13 +88,3 @@ function checkProjects() {
 		}
 	});
 }
-
-// Back to top bottom link
-window.addEventListener("scroll", function () {
-	var bottomLink = document.getElementById("bottom-link");
-	if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-		bottomLink.classList.remove("hidden");
-	} else {
-		bottomLink.classList.add("hidden");
-	}
-});

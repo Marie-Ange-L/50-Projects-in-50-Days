@@ -156,20 +156,23 @@ h2 {
 	font-size: 8px;
 }
 
-a.top {
+.chevrons a {
 	background-color: #ff6b6c;
 	color: #fff;
 	text-decoration: none;
 	padding: 15px;
 	border-radius: 5px;
-	bottom: 40px;
 	right: 40px;
 	position: fixed;
 	z-index: 1000;
+	opacity: 85%;
+}
+.chevrons a.top {
+	bottom: 100px;
 }
 
-.hidden {
-	display: none;
+.chevrons a.bottom {
+	bottom: 40px;
 }
 
 @media (max-width: 480px) {
