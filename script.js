@@ -64,9 +64,16 @@ updateProgress();
 
 // Reload iFrame
 
-function reloadFrame() {
-	document.getElementById("myIfr").src = document.getElementById("myIfr").src;
-}
+document.addEventListener("click", function (event) {
+	if (event.target.classList.contains("reload-button")) {
+		const iframeId = event.target.getAttribute("data-target");
+		const iframe = document.getElementById(iframeId);
+
+		if (iframe) {
+			iframe.src = iframe.src;
+		}
+	}
+});
 
 // Scroll Animation
 
