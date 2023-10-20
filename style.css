@@ -126,6 +126,14 @@ h2 {
 	height: 540px;
 }
 
+.project iframe.large {
+	width: 185%;
+	max-width: 1344px;
+	height: 1344px;
+	transform: scale(0.4);
+	margin: -390px 0;
+}
+
 .project small {
 	color: #fffffb;
 	font-weight: 300;
