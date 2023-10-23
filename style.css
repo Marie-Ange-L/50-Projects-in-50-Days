@@ -116,7 +116,7 @@ h2 {
 	height: 650px;
 }
 
-.project iframe.paysage {
+.project iframe.landscape {
 	width: 100%;
 	height: 200px;
 }
@@ -217,7 +217,7 @@ h2 {
 		margin: -90px 0;
 	}
 
-	.project iframe.paysage {
+	.project iframe.landscape {
 		width: 150%;
 		transform: scale(0.7);
 		margin: -20px 0;
