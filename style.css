@@ -2,6 +2,18 @@
 @import url(https://fonts.googleapis.com/css?family=Anton:regular);
 @import url(https://fonts.googleapis.com/css?family=Cabin:regular,500,600,700,italic,500italic,600italic,700italic);
 
+:root {
+	/* --main-color: #007c77;
+	--btn-color: #ff6b6c; 
+	changed 04/11 */
+
+	/* --main-color: #23a2b5;
+	--btn-color: #e55ea8; */
+
+	--main-color: #98a290;
+	--btn-color: #e65967;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -19,6 +31,8 @@ body {
 
 h1 {
 	font-family: "Anton";
+	color: #2f314c;
+	font-weight: 400;
 }
 
 .intro {
@@ -33,7 +47,7 @@ h1 {
 
 .intro a:hover {
 	text-decoration: none;
-	color: #ff6b6c;
+	color: var(--btn-color);
 }
 
 h2 {
@@ -50,8 +64,9 @@ h2 {
 }
 
 #progress-tracker span {
-	color: #ff6b6c;
+	color: var(--btn-color);
 	font-weight: bold;
+	font-size: 17px;
 }
 
 #progress-tracker small {
@@ -68,13 +83,15 @@ h2 {
 }
 
 .progress-bar {
-	height: 20px;
-	background-color: #ff6b6c;
+	height: 25px;
+	background-color: var(--btn-color);
 	border-radius: 2px;
 }
 
 .percentage-text {
 	font-size: 12px;
+	color: #fff;
+	letter-spacing: 0.75px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -88,7 +105,7 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #007c77;
+	background-color: var(--main-color);
 	margin: 15px 0;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -153,7 +170,7 @@ h2 {
 }
 
 .project .btn:hover {
-	background-color: #ff6b6c;
+	background-color: var(--btn-color);
 	color: #fffffb;
 }
 
@@ -165,7 +182,7 @@ h2 {
 }
 
 .chevrons a {
-	background-color: #ff6b6c;
+	background-color: var(--btn-color);
 	color: #fff;
 	text-decoration: none;
 	padding: 15px;
